@@ -1,0 +1,11 @@
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.csprojAssemblyReference.cache
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.csproj.CoreCompileInputs.cache
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.AssemblyInfoInputs.cache
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.AssemblyInfo.cs
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\bin\Debug\netcoreapp2.2\Receive.deps.json
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\bin\Debug\netcoreapp2.2\Receive.runtimeconfig.json
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\bin\Debug\netcoreapp2.2\Receive.runtimeconfig.dev.json
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\bin\Debug\netcoreapp2.2\Receive.dll
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\bin\Debug\netcoreapp2.2\Receive.pdb
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.dll
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.pdb
