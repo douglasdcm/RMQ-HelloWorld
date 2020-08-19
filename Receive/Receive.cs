@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Receive
 {
-    class Receive
+    public class Receive
     {
         public static void Main()
         {
+
+        }
+        public void ReceiveMessage()
+        {
             var factory = new ConnectionFactory(){ HostName = "localhost"};
+            
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
@@ -29,10 +34,10 @@ namespace Receive
                     };
                     channel.BasicConsume(queue: "hello",
                                           autoAck: true,
-                                          consumer: consumer);
+                                          consumer: consumer);                    
 
-                    Console.WriteLine(" Press [enter] to exit.");
-                    Console.ReadLine();
+                    //Console.WriteLine(" Press [enter] to exit.");
+                    //Console.ReadLine();
                 }
             }
         }

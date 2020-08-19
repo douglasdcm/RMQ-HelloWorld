@@ -1,11 +1,10 @@
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.csprojAssemblyReference.cache
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.csproj.CoreCompileInputs.cache
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.AssemblyInfoInputs.cache
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.AssemblyInfo.cs
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.dll
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.deps.json
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.runtimeconfig.json
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.runtimeconfig.dev.json
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.dll
-C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.pdb
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.csproj.CoreCompileInputs.cache
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.AssemblyInfoInputs.cache
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.AssemblyInfo.cs
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.dll
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\obj\Debug\netcoreapp2.2\Send.pdb
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Send\bin\Debug\netcoreapp2.2\Send.pdb
