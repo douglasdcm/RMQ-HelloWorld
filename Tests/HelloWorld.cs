@@ -29,7 +29,7 @@ namespace Tests
             var r = new Receive.Receive();
 
             //Act
-            //var message = s.SendMessage("Hello World");
+            //s.SendMessage("Hello World");
 
             //Assert
             //Assert.AreEqual("Hello World", r.ReceiveMessage());

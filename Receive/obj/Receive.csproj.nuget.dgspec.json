@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj": {}
+    "c:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj": {
+    "c:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj",
+        "projectUniqueName": "c:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj",
         "projectName": "Receive",
-        "projectPath": "C:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj",
+        "projectPath": "c:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\Receive.csproj",
         "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\obj\\",
+        "outputPath": "c:\\Users\\Douglas\\trainning\\RabbitMq\\HelloWorld\\Receive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -53,10 +53,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

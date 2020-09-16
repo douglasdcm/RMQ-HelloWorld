@@ -1,22 +1,18 @@
 ﻿using System;
-using RabbitMQ.Client;
-using System.Text;
 
-namespace Send
+namespace NewTask
 {
-    public class Send
+    class Program
     {
-
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
                 {
-                    
-                    channel.QueueDeclare(queue: "task_queue",
-                                         durable: true,
+                    channel.QueueDeclare(queue: "hello",
+                                         durable: false,
                                          exclusive: false,
                                          autoDelete: false,
                                          arguments: null);
@@ -35,7 +31,7 @@ namespace Send
                     Console.WriteLine(" [x] Sent {0}", message);
                 }
 
-                Console.WriteLine( "Press [enter] to exit.");
+                Console.WriteLine("Press [enter] to exit.");
                 Console.ReadLine();
             }
         }

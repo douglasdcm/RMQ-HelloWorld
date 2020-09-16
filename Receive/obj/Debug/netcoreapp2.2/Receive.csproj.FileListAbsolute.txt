@@ -8,3 +8,5 @@ C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\R
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.AssemblyInfo.cs
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.dll
 C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.pdb
+C:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.csprojAssemblyReference.cache
+c:\Users\Douglas\trainning\RabbitMq\HelloWorld\Receive\obj\Debug\netcoreapp2.2\Receive.genruntimeconfig.cache

@@ -11,6 +11,7 @@
           "MSTest.TestAdapter": "1.4.0",
           "MSTest.TestFramework": "1.4.0",
           "Microsoft.NET.Test.Sdk": "16.0.1",
+          "RabbitMQ.Client": "6.1.0",
           "Receive": "1.0.0",
           "Send": "1.0.0"
         },
