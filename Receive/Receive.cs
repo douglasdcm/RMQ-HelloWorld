@@ -8,7 +8,7 @@ namespace Receive
 {
     public class Receive
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
             var factory = new ConnectionFactory(){ HostName = "localhost"};
             
@@ -16,12 +16,16 @@ namespace Receive
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Direct);
 
                     var queueName = channel.QueueDeclare().QueueName;
-                    channel.QueueBind(queue: queueName,
+
+                    foreach(var severity in args)
+                    {
+                        channel.QueueBind(queue: queueName,
                                       exchange: "logs",
-                                      routingKey: "");
+                                      routingKey: severity);
+                    }
 
                     Console.WriteLine(" [*] Waiting for messages.");
 
