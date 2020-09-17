@@ -14,16 +14,16 @@ namespace Send
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Direct);
+                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Topic);
 
+                    var routingKey = ((args.Length > 0) ? args[0] : "anonimous.info");
                     var message = GetMessage(args);
-                    var severity = message;
                     var body = Encoding.UTF8.GetBytes(message);
                     channel.BasicPublish(exchange: "logs",
-                                         routingKey: severity,
+                                         routingKey: routingKey,
                                          basicProperties: null,
                                          body: body);
-                    Console.WriteLine(" [x] Sent {0}", message);
+                    Console.WriteLine(" [x] Sent '{0}':'{1}'", routingKey, message);
                 }
 
                 Console.WriteLine( "Press [enter] to exit.");
@@ -33,7 +33,7 @@ namespace Send
 
         private static string GetMessage(string[] args)
         {
-            return ((args.Length > 0) ? string.Join(" ", args) : "Hello World!");
+            return ((args.Length > 1) ? string.Join(" ", args) : "Hello World!");
         }
     }
 }

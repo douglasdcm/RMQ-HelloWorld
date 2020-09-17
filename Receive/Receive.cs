@@ -16,15 +16,25 @@ namespace Receive
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Direct);
+                    channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Topic);
 
                     var queueName = channel.QueueDeclare().QueueName;
 
-                    foreach(var severity in args)
+                    if(args.Length < 1)
+                    {
+                        Console.Error.WriteLine("Usage: {0} [binding_key...]",
+                                                Environment.GetCommandLineArgs()[0]);
+                        Console.WriteLine(" Press [enter] to exit.");
+                        Console.ReadLine();
+                        Environment.ExitCode = 1;
+                        return;
+                    }
+
+                    foreach(var bindingKey in args)
                     {
                         channel.QueueBind(queue: queueName,
                                       exchange: "logs",
-                                      routingKey: severity);
+                                      routingKey: bindingKey);
                     }
 
                     Console.WriteLine(" [*] Waiting for messages.");
@@ -34,7 +44,10 @@ namespace Receive
                     {
                         var body = ea.Body.ToArray();
                         var message = Encoding.UTF8.GetString(body);
-                        Console.WriteLine( " [x] Received {0}", message);
+                        var routingKey = ea.RoutingKey;
+                        Console.WriteLine( " [x] Received '{0}':'{1}'",
+                                            routingKey,
+                                            message);
 
                     };
                     channel.BasicConsume(queue: queueName,
